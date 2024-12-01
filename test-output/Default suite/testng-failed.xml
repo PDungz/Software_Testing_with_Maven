@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ecm_testing.ecm_test">
+      <class name="ecm_testing.TestUpdateProduct">
         <methods>
           <include name="setUp"/>
+          <include name="testCreateProduct" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="testLogin"/>
         </methods>
-      </class> <!-- ecm_testing.ecm_test -->
+      </class> <!-- ecm_testing.TestUpdateProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

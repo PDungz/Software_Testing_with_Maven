@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TestCreateProduct {
+public class TestUpdateProduct {
     private WebDriver driver; // Đối tượng WebDriver để điều khiển trình duyệt
     private WebDriverWait wait; // Đối tượng WebDriverWait để quản lý các trạng thái chờ trong khi tìm kiếm phần tử
 
@@ -75,19 +75,33 @@ public class TestCreateProduct {
         // Dữ liệu kiểm thử: nhiều bộ dữ liệu để tạo sản phẩm
         return new Object[][] {
         	// {"Product 1", "Đường dẫn hình ảnh trong máy bạn", "Description 1", "10", "100", "12/30/2024", "2"},
-            {"Product 1", "C:\\Users\\ASUS\\OneDrive\\Pictures\\Camera Roll\\aophong.jpg", "Description 1", "10", "100", "12/30/2024", "2"},
+            {"1", "Product 1", "C:\\Users\\ASUS\\OneDrive\\Pictures\\Camera Roll\\aophong.jpg", "Description 1", "10", "100", "12/30/2024", "1"},
 //            {"Product 2", "C:\\Users\\ASUS\\OneDrive\\Pictures\\Camera Roll\\aophong2.jpg", "Description 2", "20", "200", "01-12-2024", "2"},
 //            {"Product 3", "C:\\Users\\ASUS\\OneDrive\\Pictures\\Camera Roll\\aophong1.jpg", "Description 3", "15", "150", "15-12-2024", "3"},
         };
     }
 
     @Test(dataProvider = "productData")
-    public void testCreateProduct(String name, String imagePath, String description, String quantity, String price, String entryDate, String categoryId) {
+    public void testCreateProduct(String productId, String name, String imagePath, String description, String quantity, String price, String entryDate, String categoryId) {
         // Phương thức này thực hiện kiểm thử chức năng tạo sản phẩm
 
-        // Mở trang tạo sản phẩm mới
-        driver.get("http://127.0.0.1:8000/admin/products/create");
-        Reporter.log("Navigated to the create product page.<br>");
+    	 // Điều hướng đến trang danh sách sản phẩm
+        driver.get("http://127.0.0.1:8000/admin/products");
+
+        // Chờ cho bảng sản phẩm tải xong
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("productTable")));
+        
+        // Tìm hàng sản phẩm dựa trên ID sản phẩm
+        WebElement productRow = driver.findElement(By.xpath("//tr[td[text()='" + productId + "']]"));
+
+        // Nhấp vào nút "Edit" trong hàng sản phẩm đó
+        WebElement editButton = productRow.findElement(By.id("btnEdit")); // Thay selector tùy thuộc vào HTML thực tế
+        editButton.click();
+
+        // Chờ cho trang chỉnh sửa sản phẩm tải xong
+        wait.until(ExpectedConditions.urlContains("/edit"));
+        
+        Reporter.log("Navigated to the update product page.<br>");
 
         try {
             // Chờ cho đến khi phần tử tên sản phẩm xuất hiện và nhập thông tin
@@ -104,21 +118,27 @@ public class TestCreateProduct {
             Select categorySelect = new Select(driver.findElement(By.name("category_id")));
 
             // Điền thông tin vào các trường
+            nameInput.clear();
             nameInput.sendKeys(name);
             Reporter.log("Entered product name: " + name + "<br>");
 
+            imageInput.clear();
             imageInput.sendKeys(imagePath);
             Reporter.log("Entered product image path: " + imagePath + "<br>");
 
+            descriptionInput.clear();
             descriptionInput.sendKeys(description);
             Reporter.log("Entered product description: " + description + "<br>");
 
+            quantityInput.clear();
             quantityInput.sendKeys(quantity);
             Reporter.log("Entered product quantity: " + quantity + "<br>");
 
+            priceInput.clear();
             priceInput.sendKeys(price);
             Reporter.log("Entered product price: " + price + "<br>");
 
+            entryDateInput.clear();
             entryDateInput.sendKeys(entryDate);
             Reporter.log("Entered product entry date: " + entryDate + "<br>");
 
@@ -133,11 +153,11 @@ public class TestCreateProduct {
             Reporter.log("Submit button clicked.<br>");
 
             // Xác nhận việc tạo sản phẩm thành công
-            Reporter.log("Product creation test passed.<br>");
+            Reporter.log("Product update test passed.<br>");
 
         } catch (Exception e) {
             // Nếu có lỗi, log chi tiết thông báo lỗi
-            Reporter.log("An error occurred during the product creation test: " + e.getMessage() + "<br>");
+            Reporter.log("An error occurred during the product update test: " + e.getMessage() + "<br>");
         }
     }
 

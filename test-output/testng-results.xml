@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[WebDriver initialized successfully.<br>]]>
@@ -56,75 +56,72 @@
       <![CDATA[Product creation test passed.<br>]]>
     </line>
     <line>
-      <![CDATA[Navigated to the create product page.<br>]]>
+      <![CDATA[Browser closed successfully.<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product name: Product 2<br>]]>
+      <![CDATA[WebDriver initialized successfully.<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product image path: C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong2.jpg<br>]]>
+      <![CDATA[Navigated to the login page.<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product description: Description 2<br>]]>
+      <![CDATA[Browser window maximized.<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product quantity: 20<br>]]>
+      <![CDATA[Login form elements located successfully.<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product price: 200<br>]]>
+      <![CDATA[Entered email: phungvandung03062003@gmail.com<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product entry date: 01-12-2024<br>]]>
+      <![CDATA[Entered password.<br>]]>
     </line>
     <line>
-      <![CDATA[Selected category with ID: 2<br>]]>
+      <![CDATA[Login button clicked.<br>]]>
     </line>
     <line>
-      <![CDATA[Submit button clicked.<br>]]>
+      <![CDATA[Login test passed.<br>]]>
     </line>
     <line>
-      <![CDATA[Product creation test passed.<br>]]>
+      <![CDATA[Navigated to the update product page.<br>]]>
     </line>
     <line>
-      <![CDATA[Navigated to the create product page.<br>]]>
+      <![CDATA[Entered product name: Product 1<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product name: Product 3<br>]]>
+      <![CDATA[Entered product image path: C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong.jpg<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product image path: C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong1.jpg<br>]]>
+      <![CDATA[Entered product description: Description 1<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product description: Description 3<br>]]>
+      <![CDATA[Entered product quantity: 10<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product quantity: 15<br>]]>
+      <![CDATA[Entered product price: 100<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product price: 150<br>]]>
+      <![CDATA[Entered product entry date: 12/30/2024<br>]]>
     </line>
     <line>
-      <![CDATA[Entered product entry date: 15-12-2024<br>]]>
-    </line>
-    <line>
-      <![CDATA[Selected category with ID: 3<br>]]>
+      <![CDATA[Selected category with ID: 1<br>]]>
     </line>
     <line>
       <![CDATA[Submit button clicked.<br>]]>
     </line>
     <line>
-      <![CDATA[Product creation test passed.<br>]]>
+      <![CDATA[Product update test passed.<br>]]>
     </line>
     <line>
       <![CDATA[Browser closed successfully.<br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-30T17:51:35 ICT" name="Default suite" finished-at="2024-11-30T17:51:39 ICT" duration-ms="4491">
+  <suite started-at="2024-12-01T08:15:37 ICT" name="Selenium Test Suite" finished-at="2024-12-01T08:15:43 ICT" duration-ms="5656">
     <groups>
     </groups>
-    <test started-at="2024-11-30T17:51:35 ICT" name="Default test" finished-at="2024-11-30T17:51:39 ICT" duration-ms="4491">
-      <class name="ecm_testing.TestCreateProduct">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ecm_testing.TestCreateProduct@2767e23c]" started-at="2024-11-30T17:51:35 ICT" name="setUp" finished-at="2024-11-30T17:51:37 ICT" duration-ms="2135" status="PASS">
+    <test started-at="2024-12-01T08:15:37 ICT" name="Login Test" finished-at="2024-12-01T08:15:43 ICT" duration-ms="5656">
+      <class name="ecm_testing.TestUpdateProduct">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ecm_testing.TestUpdateProduct@402c4085]" started-at="2024-12-01T08:15:40 ICT" name="setUp" finished-at="2024-12-01T08:15:41 ICT" duration-ms="1499" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[WebDriver initialized successfully.<br>]]>
@@ -152,7 +149,120 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecm_testing.TestCreateProduct@2767e23c]" started-at="2024-11-30T17:51:37 ICT" name="testCreateProduct" data-provider="productData" finished-at="2024-11-30T17:51:38 ICT" duration-ms="767" status="PASS">
+        <test-method signature="testCreateProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecm_testing.TestUpdateProduct@402c4085]" started-at="2024-12-01T08:15:41 ICT" name="testCreateProduct" data-provider="productData" finished-at="2024-12-01T08:15:42 ICT" duration-ms="1227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Product 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong.jpg]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Description 1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[12/30/2024]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigated to the update product page.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered product name: Product 1<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered product image path: C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong.jpg<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered product description: Description 1<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered product quantity: 10<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered product price: 100<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered product entry date: 12/30/2024<br>]]>
+            </line>
+            <line>
+              <![CDATA[Selected category with ID: 1<br>]]>
+            </line>
+            <line>
+              <![CDATA[Submit button clicked.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Product update test passed.<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecm_testing.TestUpdateProduct@402c4085]" started-at="2024-12-01T08:15:42 ICT" name="tearDown" finished-at="2024-12-01T08:15:43 ICT" duration-ms="79" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed successfully.<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ecm_testing.TestUpdateProduct -->
+      <class name="ecm_testing.TestCreateProduct">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ecm_testing.TestCreateProduct@5524cca1]" started-at="2024-12-01T08:15:37 ICT" name="setUp" finished-at="2024-12-01T08:15:39 ICT" duration-ms="1873" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[WebDriver initialized successfully.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to the login page.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Browser window maximized.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Login form elements located successfully.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered email: phungvandung03062003@gmail.com<br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered password.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Login button clicked.<br>]]>
+            </line>
+            <line>
+              <![CDATA[Login test passed.<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecm_testing.TestCreateProduct@5524cca1]" started-at="2024-12-01T08:15:39 ICT" name="testCreateProduct" data-provider="productData" finished-at="2024-12-01T08:15:40 ICT" duration-ms="838" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,149 +333,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCreateProduct -->
-        <test-method signature="testCreateProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecm_testing.TestCreateProduct@2767e23c]" started-at="2024-11-30T17:51:38 ICT" name="testCreateProduct" data-provider="productData" finished-at="2024-11-30T17:51:38 ICT" duration-ms="737" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Product 2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong2.jpg]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Description 2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[01-12-2024]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Navigated to the create product page.<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product name: Product 2<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product image path: C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong2.jpg<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product description: Description 2<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product quantity: 20<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product price: 200<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product entry date: 01-12-2024<br>]]>
-            </line>
-            <line>
-              <![CDATA[Selected category with ID: 2<br>]]>
-            </line>
-            <line>
-              <![CDATA[Submit button clicked.<br>]]>
-            </line>
-            <line>
-              <![CDATA[Product creation test passed.<br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCreateProduct -->
-        <test-method signature="testCreateProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecm_testing.TestCreateProduct@2767e23c]" started-at="2024-11-30T17:51:38 ICT" name="testCreateProduct" data-provider="productData" finished-at="2024-11-30T17:51:39 ICT" duration-ms="725" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Product 3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong1.jpg]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Description 3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[15]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[150]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[15-12-2024]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Navigated to the create product page.<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product name: Product 3<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product image path: C:\Users\ASUS\OneDrive\Pictures\Camera Roll\aophong1.jpg<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product description: Description 3<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product quantity: 15<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product price: 150<br>]]>
-            </line>
-            <line>
-              <![CDATA[Entered product entry date: 15-12-2024<br>]]>
-            </line>
-            <line>
-              <![CDATA[Selected category with ID: 3<br>]]>
-            </line>
-            <line>
-              <![CDATA[Submit button clicked.<br>]]>
-            </line>
-            <line>
-              <![CDATA[Product creation test passed.<br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCreateProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecm_testing.TestCreateProduct@2767e23c]" started-at="2024-11-30T17:51:39 ICT" name="tearDown" finished-at="2024-11-30T17:51:39 ICT" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ecm_testing.TestCreateProduct@5524cca1]" started-at="2024-12-01T08:15:40 ICT" name="tearDown" finished-at="2024-12-01T08:15:40 ICT" duration-ms="109" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser closed successfully.<br>]]>
@@ -373,6 +341,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- ecm_testing.TestCreateProduct -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Selenium Test Suite -->
 </testng-results>

@@ -3,7 +3,7 @@
     <test name="Login Test">
         <classes>
             <class name="ecm_testing.TestCreateProduct" />
-            
+            <class name="ecm_testing.TestUpdateProduct" />
         </classes>
     </test>
 </suite>
